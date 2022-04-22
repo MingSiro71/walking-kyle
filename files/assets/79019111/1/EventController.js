@@ -11,5 +11,7 @@ EventController.prototype.initialize = function() {
 };
 
 EventController.prototype.testAction = function() {
-    console.log('talk with cat');
+    const card = document.getElementById('content-news');
+    card.classList.remove("inactive");
+    // console.log('talk with cat');
 };

@@ -1,0 +1,17 @@
+body {
+    position: relative;
+}
+
+.card-content {
+    position: absolute;
+    background-color: #fff;
+    top: 3rem;
+    left: 3rem;
+    min-width: 360px;
+    width: 30vw;
+    padding: 2rem;
+}
+
+.inactive {
+    display: none;
+}

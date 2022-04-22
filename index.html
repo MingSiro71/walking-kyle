@@ -4,6 +4,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover' />
     <meta charset='utf-8'>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="application.css">
     <link rel="manifest" href="manifest.json">
     <style></style>
     <title>My First Project</title>
@@ -14,5 +15,19 @@
     <script src="__modules__.js"></script>
     <script src="__start__.js"></script>
     <script src="__loading__.js"></script>
+
+    <div class="card-content inactive" id="content-news" onclick="hide(event)">
+        <h1>What New?</h1>
+        <ul>
+            <li>サイトを公開しました</li>
+        </ul>
+    </div>
+    <script>
+        const hide = (event) => {
+            console.log(event);
+            const card = event.currentTarget;
+            card.classList.add("inactive");
+        }
+    </script>
 </body>
 </html>

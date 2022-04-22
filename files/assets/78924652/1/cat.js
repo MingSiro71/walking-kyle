@@ -5,9 +5,7 @@ Cat.prototype.initialize = function() {
 };
 
 Cat.prototype.onCollisionStart = function (result) {
-    console.log('A');
     if( this.app.hasEvent('talkWithCat') ){
-            console.log('B');
         this.app.fire('talkWithCat');
     }
 };
